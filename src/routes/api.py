@@ -1,6 +1,9 @@
 import asyncio
 from fastapi import APIRouter
 from ..utils.logger import log_execution_time, timer
+from eval_common.security import verify_password, create_access_token
+from eval_common.database import get_db
+from eval_common.helpers import validate_email
 
 router = APIRouter()
 

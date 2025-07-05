@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from eval_common.caching import cache
 from .routes.api import router as api_router
 from .utils.logger import setup_logger
 
